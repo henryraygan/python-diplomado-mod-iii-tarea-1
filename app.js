@@ -90,9 +90,9 @@ function createTableData(obj) {
       const { firstname, surname, motivation } = item;
       tableBody.append(
         `<tr>
-          <th scope="row">${firstname}</th>
-          <td>${surname}</td>
-          <td>${motivation}</td>
+          <th scope="row">${firstname || "-------"}</th>
+          <td>${surname || "-------"}</td>
+          <td>${motivation || "-------"}</td>
         </tr>`
       );
     });
